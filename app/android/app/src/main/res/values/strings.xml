@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Sniffies Workbench</string>
+    <string name="title_activity_main">Sniffies Workbench</string>
+    <string name="package_name">org.aicincy.sniffies.workbench</string>
+    <string name="custom_url_scheme">org.aicincy.sniffies.workbench</string>
+</resources>

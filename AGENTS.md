@@ -2,7 +2,9 @@
 
 ## Project status
 
-This is the initial Sniffies project workspace. At present it contains a supplied Android APK and a local `Skills/` reference library. Treat the APK as an immutable input unless a task explicitly authorizes replacing it. Do not infer the app's behavior, ownership, licensing, or intended deployment from its filename alone.
+This workspace contains a supplied Android APK, an independent Angular and Capacitor workbench in `app/`, and a local `Skills/` reference library. Treat the APK as an immutable input unless a task explicitly authorizes replacing it. Do not infer the app's behavior, ownership, licensing, or intended deployment from its filename alone.
+
+The workbench uses Angular 21 LTS and Capacitor 8.5.1. Its Android application ID is `org.aicincy.sniffies.workbench`, intentionally distinct from the APK's signed package ID. Do not try to ship it as an update to the supplied APK without the original source and signing key.
 
 ## Sources of truth
 
@@ -19,6 +21,7 @@ This is the initial Sniffies project workspace. At present it contains a supplie
 - Do not claim that an Android artifact works without a reproducible install or runtime check.
 - When source code is added, use the repository's existing formatter, linter, test runner, and package manager. Do not introduce a second toolchain without a clear need.
 - Run the narrowest relevant validation after each change. Report the command and result.
+- Run `npm run doctor` from `app/` before native Android work, `npm run verify` before a handoff, and `npm run android:build` before claiming the Android host builds.
 
 ## Secrets and sensitive material
 

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "artifact": {
+    "file": "sniffies-app-c0f0650.apk",
+    "sha256": "e1d5df345a1be97b254f0f6d68c68ad99f637e195f58826e6db5e58751d16091"
+  },
+  "package": {
+    "applicationId": "com.sniffies.app",
+    "versionCode": 1908,
+    "versionName": "1.1",
+    "minSdk": 26,
+    "targetSdk": 36,
+    "compileSdk": 36
+  },
+  "web": {
+    "framework": "Angular",
+    "nativeBridge": "Capacitor",
+    "webDir": "dist/front-end"
+  },
+  "android": {
+    "abis": ["arm64-v8a", "armeabi-v7a", "x86", "x86_64"],
+    "signingSchemesVerified": ["v2"]
+  },
+  "pluginsObserved": [
+    "@capacitor-firebase/analytics", "@capacitor/app", "@capacitor/browser", "@capacitor/camera", "@capacitor/device", "@capacitor/filesystem", "@capacitor/geolocation", "@capacitor/inappbrowser", "@capacitor/network", "@capacitor/preferences", "@capacitor/push-notifications", "@capacitor/splash-screen", "@capacitor/status-bar", "@capgo/capacitor-updater", "@sentry/capacitor", "capacitor-native-settings", "capacitor-plugin-safe-area"
+  ]
+}
