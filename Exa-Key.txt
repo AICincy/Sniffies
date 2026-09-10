@@ -1,0 +1,8 @@
+{
+  "exa": {
+    "url": "https://mcp.exa.ai/mcp",
+    "headers": {
+      "x-api-key": "a0f9503b-dc3a-4a12-a14e-211335010b32"
+    }
+  }
+}
