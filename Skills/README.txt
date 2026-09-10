@@ -1,0 +1,1 @@
+The skills listed in this directory are what I want to use an implement. However, they are built on the grounded architecture of OpenAI Codex and xAI Grok. Please update their functionalities, executions, governance, state, custody for this project. 
