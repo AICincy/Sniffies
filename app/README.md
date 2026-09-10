@@ -1,6 +1,6 @@
 # SniffiesWorkbench
 
-> This is an independent Angular and Capacitor workbench. It is not the original `com.sniffies.app` application and cannot create an update for that signed package.
+> This is an independent tooling workbench. It preserves the observed APK release metadata, but it is not the original `com.sniffies.app` application and cannot create an update for that signed package without the original signing key.
 
 ## Project commands
 
@@ -12,7 +12,7 @@ npm run android:sync    # Build web output and synchronize the Android host
 npm run android:build   # Synchronize and assemble a debug APK
 ```
 
-The native workbench package ID is `org.aicincy.sniffies.workbench`. Keep it distinct unless a future task supplies authorized source and signing material.
+The native workbench package ID is `org.aicincy.sniffies.workbench`. Its Android version code and version name mirror the observed APK release: `1908` and `1.1`. Keep the package ID distinct unless a future task supplies authorized source and signing material.
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.23.
 

@@ -18,7 +18,7 @@ The machine-readable record is in `config/apk-baseline.json`. The artifact check
 
 ## Workbench boundaries
 
-The Android host uses `org.aicincy.sniffies.workbench`, not `com.sniffies.app`. Android will not accept a replacement for the supplied package unless it has the original signing key. The workbench therefore begins as an independent environment for authorized development and analysis.
+The Android host uses `org.aicincy.sniffies.workbench`, not `com.sniffies.app`. It mirrors the observed Android version code `1908` and version name `1.1`, but Android will not accept a replacement for the supplied package unless it has the original signing key. The workbench therefore begins as an independent environment for authorized development and analysis.
 
 The supplied package declares Capacitor integrations for analytics, camera, device data, file access, geolocation, in-app browser, network state, preferences, push notifications, splash screen, status bar, update delivery, crash reporting, native settings, and safe-area handling. Plugin names alone do not establish their configurations or behavior. Add a plugin only with a stated feature requirement and the required credentials or platform configuration.
 
@@ -39,4 +39,4 @@ Run `npm run doctor` from `app/` to verify the first three requirements. Run `np
 4. Run `npm run android:build` to assemble the separate debug workbench package.
 5. Before enabling a native capability, document its permission, data handling, and any required provider configuration.
 
-Do not add production signing keys, Firebase configuration, update URLs, analytics identifiers, or service credentials to the repository.
+Do not add production signing keys, Firebase configuration, update URLs, analytics identifiers, or service credentials to the repository. Do not upgrade, downgrade, or replace an APK-derived version or dependency unless a documented defect requires that exact change.

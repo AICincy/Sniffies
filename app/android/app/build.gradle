@@ -7,8 +7,10 @@ android {
         applicationId "org.aicincy.sniffies.workbench"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        // Mirrors the supplied APK release metadata. The application ID remains
+        // distinct because this workbench does not possess the original signing key.
+        versionCode 1908
+        versionName "1.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
