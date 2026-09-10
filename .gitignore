@@ -1,2 +1,25 @@
-firecrawl-key.txt
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*-key.txt
 PAT.txt
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+
+# IDE and operating-system files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Build outputs and logs
+build/
+dist/
+coverage/
+*.log

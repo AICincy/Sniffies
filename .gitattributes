@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Keep future Android package artifacts out of ordinary Git blobs.
+*.apk filter=lfs diff=lfs merge=lfs -text
